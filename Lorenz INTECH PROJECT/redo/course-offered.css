@@ -31,11 +31,15 @@ header nav > a:first-child {
     background-color: #ebe43d;
 }
 
+/* all course container */
+.course-container {
+    box-shadow: 0 2px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 .bachelor-courses-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 80px;
     align-items: center;
 }
 
@@ -47,7 +51,7 @@ header nav > a:first-child {
     height: 500px;
     border: 1px solid black;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     background-color: #7b6c4a;
 }
 
@@ -94,6 +98,7 @@ header nav > a:first-child {
 .bachelor-courses-container .course-container .right .course-desc .course-title {
     padding-bottom: 15px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .bachelor-courses-container .course-container .right .course-desc {
@@ -112,11 +117,12 @@ header nav > a:first-child {
     color: #ede88a;
     border-bottom: solid;
     border-color: yellowgreen;
+    text-shadow: 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .bachelor-courses-container .course-container .right .course-desc .course-overview,
 .graduate-courses-container .course-section .course-container .course-overview {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 35px;
     color: #ede88a;
 }

@@ -50,3 +50,10 @@
     gap: 20px;
  }
 }
+
+@media screen and (max-width: 1366px) {
+   main .hero-section>.hero-text-container {
+      top: 75%;
+      left: 51%;
+   }
+}

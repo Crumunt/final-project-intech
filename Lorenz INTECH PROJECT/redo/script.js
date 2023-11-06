@@ -1,3 +1,7 @@
+// const header = document.querySelector('header');
+
+// console.log(header.offsetWidth)
+
 // const NEWSSLIDER = document.querySelectorAll('.news-slider');
 
 // let lastNewsSliderSelected = document.body.querySelector('.news-slider[current="true"]')
