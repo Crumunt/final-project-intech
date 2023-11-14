@@ -1,6 +1,10 @@
 @import url(landing-page.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
+header {
+    background-image: linear-gradient(to right, #FFD95A, #C07F00);
+}
+
 header nav > a:first-child {
     background-color: rgb(167, 109, 1);
     border-color: rgb(167, 109, 1);
@@ -17,18 +21,23 @@ header nav > a:first-child {
     border-left: 0;
     border-right: 0;
     width: 100%;
-    background-color: #DDDDCD;
+    /* background-color: #DDDDCD; */
+    /* background-color: #FFD95A; */
+    background-color: #4C3D3D;
 }
 
 .bachelor-header p,
 .graduate-header p {
     font-size: 50px;
+    color: #FFF7D4;
 }
 
 .bachelor-courses-container,
 .graduate-courses-container {
     padding-top: 80px;
-    background-color: #ebe43d;
+    /* background-color: #ebe43d; */
+    /* background-color: #C07F00; */
+    /* background-color: #FFD95A; */
 }
 
 /* all course container */
@@ -36,11 +45,20 @@ header nav > a:first-child {
     box-shadow: 0 2px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.bachelor-courses-container {
+.bachelor-courses-container,
+.graduate-courses-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-image: linear-gradient(to bottom, #FFD95A, #C07F00); */
+    /* background-color: #C07F00; */
+    background-color: #FFD95A;
+}
+
+.bachelor-courses-container .course-container,
+.graduate-courses-container .course-container {
+    background-color: #4C3D3D;
 }
 
 .bachelor-courses-container .course-container {
@@ -52,7 +70,7 @@ header nav > a:first-child {
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 80px;
-    background-color: #7b6c4a;
+    /* background-color: #7b6c4a; */
 }
 
 .bachelor-courses-container .course-container .left,
@@ -114,9 +132,12 @@ header nav > a:first-child {
     width: 90%;
     text-align: center;
     font-size: 30px;
-    color: #ede88a;
+    /* color: #ede88a; */
+    /* color: #4C3D3D; */
+    color: #FFF7D4;
     border-bottom: solid;
-    border-color: yellowgreen;
+    /* border-color: yellowgreen; */
+    border-color: #FFD95A;
     text-shadow: 0 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -124,14 +145,12 @@ header nav > a:first-child {
 .graduate-courses-container .course-section .course-container .course-overview {
     font-size: 21px;
     line-height: 35px;
-    color: #ede88a;
+    /* color: #ede88a; */
+    /* color: #4C3D3D; */
+    color: #FFF7D4;
 }
 
 .graduate-courses-container {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
     gap: 50px;
 }
 
@@ -148,14 +167,13 @@ header nav > a:first-child {
     height: 500px;
     border: 1px solid black;
     border-radius: 30px;
-    background-color: #7b6c4a;
+    /* background-color: #7b6c4a; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .graduate-courses-container .course-section .course-container .course-title {
-    width: 90%;
     margin-top: 30px;
     padding-bottom: 10px;
 }
