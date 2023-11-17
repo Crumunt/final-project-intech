@@ -32,7 +32,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #ebe43d;
+    /* background-color: #ebe43d; */
+    background-image: linear-gradient(to right, #FFD95A, #C07F00);
 }
 
 header .image-container {
@@ -54,12 +55,11 @@ header nav {
     gap: 20px;
 }
 
-header nav>a {
-    border: 1px solid black;
+header nav > a {
     padding: 15px 25px;
     border-radius: 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: #FFF7D4;
     background-color: #44431b;
     transition: color 0.15s;
 }
@@ -109,7 +109,7 @@ main .hero-section>.hero-text-container>.hero-author {
     font-size: 20px;
 }
 
-main .about-college-section {
+section.about-college {
     padding-top: 50px;
     background-image: linear-gradient(to bottom, #f5ee56, #ddddcd);
     display: flex;
@@ -120,25 +120,25 @@ main .about-college-section {
     padding-bottom: 80px;
 }
 
-main .about-college-section>.college-title {
+section.about-college > .college-title {
     font-size: 30px;
     color: rgb(68, 41, 1);
 }
 
-main .about-college-section>.about-college {
+section.about-college > .about-college {
     width: 950px;
     font-size: 30px;
     text-align: justify;
     line-height: 50px;
 }
 
-main .about-college-section>p {
+section.about-college-section > p {
     font-weight: 500;
     font-family: "Montserrat";
     color: rgb(68, 41, 1);
 }
 
-main .dean-section {
+section.dean {
     padding-top: 150px;
     display: flex;
     justify-content: center;
@@ -148,12 +148,12 @@ main .dean-section {
     background-color: #ddddcd;
 }
 
-main .dean-section>.left,
-main .dean-section>.right {
+section.dean > .left,
+section.dean>.right {
     margin-left: 7%;
 }
 
-main .dean-section .left {
+section.dean .left {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -161,7 +161,7 @@ main .dean-section .left {
     align-items: center;
 }
 
-main .dean-section>.left .dean-name-container>p {
+section.dean > .left .dean-name-container>p {
     font-size: 22px;
     font-weight: 500;
     text-shadow: 0 3px 4px #979797;
@@ -170,7 +170,7 @@ main .dean-section>.left .dean-name-container>p {
     border-bottom: solid;
 }
 
-main .dean-section>.left .dean-image-container {
+section.dean > .left .dean-image-container {
     width: 400px;
     height: 500px;
     border: 3px solid black;
@@ -179,13 +179,13 @@ main .dean-section>.left .dean-image-container {
     overflow: hidden;
 }
 
-main .dean-section>.left .dean-image-container>img {
+section.dean > .left .dean-image-container>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-main .dean-section>.right {
+section.dean > .right {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -195,19 +195,19 @@ main .dean-section>.right {
     position: relative;
 }
 
-main .dean-section>.right>p {
+section.dean > .right > p {
     width: 500px;
     font-size: 25px;
     line-height: 3rem;
     text-align: left;
 }
 
-main .dean-section>.right>p>span {
+section.dean > .right>p>span {
     font-style: oblique;
     font-weight: 500;
 }
 
-main .dean-section>.right>button {
+section.dean > .right > button {
     font-size: 18px;
     padding: 8px 15px;
     border-radius: 8px;
@@ -217,11 +217,11 @@ main .dean-section>.right>button {
     transition: color 0.15s;
 }
 
-main .dean-section>.right>button:hover {
+section.dean > .right > button:hover {
     color: rgb(175, 175, 175);
 }
 
-main .news-announcements-section {
+section.news-announcements {
     padding-top: 280px;
     padding-bottom: 80px;
     display: flex;
@@ -229,8 +229,8 @@ main .news-announcements-section {
     background-image: linear-gradient(to bottom, #ddddcd, #f5ee56);
 }
 
-main .news-announcements-section>.left,
-main .news-announcements-section>.right {
+section.news-announcements > .left,
+section.news-announcements > .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,13 +238,13 @@ main .news-announcements-section>.right {
     gap: 20px;
 }
 
-main .news-announcements-section>.left>h1::first-line,
-main .news-announcements-section>.righ t>h1::first-line {
+section.news-announcements > .left > h1::first-line,
+section.news-announcements > .right > h1::first-line {
     text-transform: uppercase;
 }
 
-main .news-announcements-section>.left>button,
-main .news-announcements-section>.right>button {
+section.news-announcements > .left > button,
+section.news-announcements > .right > button {
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -254,13 +254,13 @@ main .news-announcements-section>.right>button {
     background-color: #44431b;
 }
 
-main .news-announcements-section .left>button:hover,
-main .news-announcements-section .right>button:hover {
+section.news-announcements .left > button:hover,
+section.news-announcements .right > button:hover {
     color: #979797;
 }
 
-main .news-announcements-section .left>.news-container,
-main .news-announcements-section .right>.announcements-container {
+section.news-announcements .left > .news-container,
+section.news-announcements .right > .announcements-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -274,13 +274,13 @@ main .news-announcements-section .right>.announcements-container {
     overflow: hidden;
 }
 
-main .news-announcements-section .left>.news-container:hover,
-main .news-announcements-section .right>.announcements-container:hover {
+section.news-announcements .left > .news-container:hover,
+section.news-announcements .right > .announcements-container:hover {
     box-shadow: 0 2px 30px rgba(116, 85, 7, 0.485);
 }
 
-main .news-announcements-section .left>.news-container .news-slider-images,
-main .news-announcements-section .right>.announcements-container .announcement-slider-images {
+section.news-announcements .left > .news-container .news-slider-images,
+section.news-announcements .right > .announcements-container .announcement-slider-images {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -288,8 +288,8 @@ main .news-announcements-section .right>.announcements-container .announcement-s
     scroll-behavior: smooth;
 }
 
-main .news-announcements-section .left>.news-container .news-slider-images img,
-main .news-announcements-section .right>.announcements-container .announcement-slider-images img {
+section.news-announcements .left > .news-container .news-slider-images img,
+section.news-announcements .right > .announcements-container .announcement-slider-images img {
     flex: 1 0 100%;
     object-fit: cover;
     scroll-snap-align: start;
@@ -297,8 +297,8 @@ main .news-announcements-section .right>.announcements-container .announcement-s
     height: 100%;
 }
 
-main .news-announcements-section>.left .news-container>.news-slider-container>ul,
-main .news-announcements-section>.right .announcements-container>.announcements-slider-container>ul {
+section.news-announcements > .left .news-container > .news-slider-container > ul,
+section.news-announcements > .right .announcements-container > .announcements-slider-container > ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -309,8 +309,8 @@ main .news-announcements-section>.right .announcements-container>.announcements-
     list-style: none;
 }
 
-main .news-announcements-section>.left .news-container .news-slider-container>ul>li>button,
-main .news-announcements-section>.right .announcements-container .announcements-slider-container>ul>li>button {
+section.news-announcements > .left .news-container .news-slider-container > ul > li > button,
+section.news-announcements > .right .announcements-container .announcements-slider-container > ul > li > button {
     padding: 10px;
     border-radius: 50%;
     border: 0.5px solid black;
@@ -318,13 +318,13 @@ main .news-announcements-section>.right .announcements-container .announcements-
     width: 10px;
 }
 
-main>.news-announcements-section>.left .news-container .news-slider-container>ul>li>button[current="false"],
-main>.news-announcements-section>.right .announcements-container .announcements-slider-container>ul>li>button[current="false"] {
+section.news-announcements > .left .news-container .news-slider-container > ul > li >button[current="false"],
+section.news-announcements > .right .announcements-container .announcements-slider-container > ul > li > button[current="false"] {
     opacity: 0.75;
 }
 
-main>.news-announcements-section>.left>.news-container>.news-slider-container>ul>li>button[current="true"],
-main>.news-announcements-section>.right>.announcements-container>.announcements-slider-container>ul>li>button[current="true"] {
+section.news-announcements > .left > .news-container > .news-slider-container > ul > li > button[current="true"],
+section.news-announcements > .right > .announcements-container > .announcements-slider-container > ul > li > button[current="true"] {
     transform: scale(1.4);
     background-color: #44431b;
     border: none;
@@ -420,7 +420,7 @@ footer .main-content .formRow .form textarea {
     border: 1px solid;
 }
 
-footer .main-content .formRow .form>button {
+footer .main-content .formRow .form > button {
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid;
@@ -430,12 +430,12 @@ footer .main-content .formRow .form>button {
     background-color: #44431b;
 }
 
-footer .main-content>.formRow>.form>button:hover {
+footer .main-content > .formRow > .form > button:hover {
     color: #979797;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container,
-main .dean-section .dean-publication-section .dean-publication-container {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container,
+section.dean .dean-publication-section .dean-publication-container {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -454,20 +454,20 @@ main .dean-section .dean-publication-section .dean-publication-container {
     box-shadow: 0 2px 4px 8px rgba(255, 255, 255, 0.15);
 }
 
-main .dean-section .dean-publication-section .publications-body {
+section.dean .dean-publication-section .publications-body {
     padding-top: 15px;
     overflow: scroll;
 }
 
-main .dean-section .dean-publication-section .publications-body ul {
+section.dean .dean-publication-section .publications-body ul {
     list-style-type: none;
 }
 
-main .dean-section .dean-publication-section .publications-body ul li {
+section.dean .dean-publication-section .publications-body ul li {
     margin-top: 10px;
 }
 
-main .dean-section .dean-publication-section .publications-body a {
+section.dean .dean-publication-section .publications-body a {
     text-decoration: none;
     text-align: left;
     color: #1f1f08;
@@ -476,18 +476,18 @@ main .dean-section .dean-publication-section .publications-body a {
     font-size: 18px;
 }
 
-main .dean-section .dean-publication-section .publications-body a:hover {
+section.dean .dean-publication-section .publications-body a:hover {
     border-bottom: solid;
     font-weight: 500;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container.active,
-main .dean-section .dean-publication-section .dean-publication-container.active {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container.active,
+section.dean .dean-publication-section .dean-publication-container.active {
     visibility: visible;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container .alert-header,
-main .dean-section .dean-publication-section .publications-header {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container .alert-header,
+section.dean .dean-publication-section .publications-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -495,13 +495,13 @@ main .dean-section .dean-publication-section .publications-header {
     border-bottom: 1px solid;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container .alert-header p,
-main .dean-section .dean-publication-section .publications-header p {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container .alert-header p,
+section.dean .dean-publication-section .publications-header p {
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container .alert-header p {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container .alert-header p {
     color: rgb(229, 8, 8);
 }
 
@@ -510,8 +510,8 @@ footer .main-content>.formRow .func-not-avail-section .func-not-avail-container 
     font-weight: 500;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container .alert-header .close-alert,
-main .dean-section .dean-publication-section .publications-header .publications-close {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container .alert-header .close-alert,
+section.dean .dean-publication-section .publications-header .publications-close {
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -522,17 +522,17 @@ main .dean-section .dean-publication-section .publications-header .publications-
     font-size: 1.25rem;
 }
 
-footer .main-content>.formRow .func-not-avail-section .func-not-avail-container .alert-header .close-alert:hover,
-main .dean-section .dean-publication-section .publications-header .publications-close:hover {
+footer .main-content > .formRow .func-not-avail-section .func-not-avail-container .alert-header .close-alert:hover,
+section.dean .dean-publication-section .publications-header .publications-close:hover {
     background-color: rgb(184, 184, 184);
 }
 
-main .dean-section .dean-publication-section .publications-header .publications-close {
+section.dean .dean-publication-section .publications-header .publications-close {
     font-size: 1.5rem;
 }
 
-footer .main-content>.formRow .func-not-avail-section #overlay,
-main .dean-section .dean-publication-section #overlay {
+footer .main-content > .formRow .func-not-avail-section #overlay,
+section.dean .dean-publication-section #overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -540,10 +540,11 @@ main .dean-section .dean-publication-section #overlay {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
 }
 
-footer .main-content>.formRow .func-not-avail-section #overlay.active,
-main .dean-section .dean-publication-section #overlay.active {
+footer .main-content > .formRow .func-not-avail-section #overlay.active,
+section.dean .dean-publication-section #overlay.active {
     opacity: 1;
     pointer-events: all;
 }
