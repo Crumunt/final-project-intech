@@ -93,7 +93,10 @@ img {
 }
 
 .content p {
-  color: #C07F00;
+  /* color: #FFF7D4; */
+  background: -webkit-linear-gradient(#FFF7D4,#C07F00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 35px;
 }
 

@@ -11,10 +11,16 @@
 }
 
 .hero-section {
-    /* overflow: hidden; */
+    overflow: hidden;
     display: grid;
     place-items: center;
     isolation: isolate;
+    max-height: 80vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                url("../images/clg-ced.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 13rem;
 }
 
 .hero-section > * {
@@ -22,17 +28,13 @@
     grid-row: 1 / -1;
 }
 
-.hero-background {
-    width: 100%;
-}
-
-.hero-background img {
-    filter: blur(3px);
+/* .hero-background img {
+    display: block;
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
     z-index: -10;
-}
+} */
 
 .hero-text-container {
     z-index: 10;
@@ -115,7 +117,7 @@ section.dean > .left .dean-name-container>p {
 }
 
 section.dean > .left .dean-image-container {
-    width: 80%;
+    width: 70%;
     border: 3px solid black;
     border-radius: 25px;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);

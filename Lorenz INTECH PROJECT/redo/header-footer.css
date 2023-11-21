@@ -140,13 +140,17 @@ footer .main-content .formRow .form {
   margin-top: 80px;
 }
 
+footer .main-content .formRow .form .name-input-container {
+  width: 100%;
+}
+
 footer .main-content .formRow .form .name-input-container>input[type="text"],
 footer .main-content .formRow .form textarea {
   padding: 10px;
   font-size: 15px;
   border-radius: 10px;
   border: 1px solid;
-  width: 400px;
+  width: 100%;
 }
 
 footer .main-content .formRow .form>button {
@@ -272,7 +276,7 @@ footer .main-content .locationRow .location-container {
     overflow: hidden;
 }
 
-footer .main-content .locationRow .location-container>a>img {
+footer .main-content .locationRow .location-container iframe {
     width: 100%;
 }
 

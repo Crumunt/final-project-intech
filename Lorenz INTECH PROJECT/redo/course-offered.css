@@ -21,6 +21,7 @@ header nav > a.current-page {
     /* background-color: #DDDDCD; */
     /* background-color: #FFD95A; */
     background-color: #4C3D3D;
+    text-transform: uppercase;
 }
 
 .bachelor-header p,

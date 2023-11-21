@@ -88,12 +88,7 @@ class Footer extends HTMLElement {
       <div class="locationRow">
         <span>Location</span>
         <div class="location-container">
-          <a
-            href="https://www.google.com/maps/place/College+of+Education+CLSU/@15.7369978,120.9311836,17z/data=!4m9!1m2!2m1!1sCentral+Luzon+State+University,+%09Science+City+of+Mu%C3%B1oz+Nueva+Ecija,+Philippines!3m5!1s0x3390d73d5af73b51:0xbd960c0f9a69bbbe!8m2!3d15.7371459!4d120.9361634!16s%2Fg%2F11ll3_4y4j?hl=en-US&entry=ttu"
-            target="_blank"
-          >
-            <img src="../map.png" alt="" />
-          </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3840.267202088418!2d120.9311836!3d15.7369978!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3390d73d5af73b51%3A0xbd960c0f9a69bbbe!2sCollege%20of%20Education%20CLSU!5e0!3m2!1sen!2sph!4v1700526716581!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
         </div>
       </div>
     </div>
