@@ -125,9 +125,12 @@ section.dean > .left .dean-image-container {
 }
 
 section.dean > .left .dean-image-container > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+    font-style: italic;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section.dean > .right {
