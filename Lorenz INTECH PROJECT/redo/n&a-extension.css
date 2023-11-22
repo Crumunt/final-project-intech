@@ -82,6 +82,7 @@ section {
   display: grid;
   place-items: center;
   padding-top: 50px;
+  user-select: none;
 }
 
 section .header {
@@ -130,7 +131,6 @@ section .header h1 {
   border: 1px solid black;
   border-radius: 20px;
   overflow: hidden;
-  object-position: center;
   max-width: 90%;
 }
 
@@ -150,6 +150,18 @@ section .header h1 {
   border-top: 0;
   padding: 2rem;
   background-color: #FFF7D4;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.sub-articles h1,
+.sub-announcements h1 {
+  padding-bottom: 8px;
+}
+
+.sub-articles .title p,
+.sub-announcements .title p {
+  color: rgb(85, 85, 85);
 }
 
 .sub-articles .top .article,
@@ -170,12 +182,11 @@ section .header h1 {
 .sub-announcements .bottom .announcement > div {
   text-align: left;
   width: 50%;
-  height: 100%;
 }
 
-.sub-announcements .top .announcement > div,
-.sub-announcements .bottom .announcement > div {
-  text-align: right;
+.sub-announcements .top .announcement > .title,
+.sub-announcements .bottom .announcement > .title {
+  padding-left: 1rem;
 }
 
 .sub-articles .top,
@@ -194,13 +205,17 @@ section .header h1 {
 .sub-announcements .bottom .announcement .image-wrapper {
   border-radius: 20px;
   overflow: hidden;
+  max-height: 200px;
 }
 
 .sub-articles .top .article img,
 .sub-articles .bottom .article img,
 .sub-announcements .top .announcement img,
 .sub-announcements .bottom .announcement img {
+  display: block;
+  margin: auto;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 

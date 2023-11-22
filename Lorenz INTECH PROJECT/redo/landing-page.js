@@ -62,9 +62,18 @@ SLIDERS.forEach(slider => slider.addEventListener('click', () => {
 const PBUTTON = document.querySelector('.publications-button');
 const PCBUTTON = document.querySelector('.publications-close');
 
+hover(PBUTTON)
+
 PCBUTTON.addEventListener('click', ()=> removeOverlay('.dean-publication'))
 PBUTTON.addEventListener('click', ()=> createOverlay('.dean-publication'));
 
+const READ_MORE = document.querySelector('.readMore');
+
+READ_MORE.addEventListener('click', ()=> {
+    location.href='n&a-extension.html';
+})
+
+hover(READ_MORE)
 
 function moveSlider(slider, lastSelectedSlider) {
 
@@ -91,4 +100,16 @@ function loadFirstImageonReload() {
 
         document.querySelector(`.${button.className}-images`).scrollTop = topPos;
     })
+}
+
+function hover(button) {
+
+    button.addEventListener('mouseenter', ()=> {
+        button.classList.toggle('active');
+    })
+
+    button.addEventListener('mouseout', ()=> {
+        button.classList.toggle('active');
+    })
+
 }
