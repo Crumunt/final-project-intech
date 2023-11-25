@@ -30,15 +30,15 @@
 //     lastNewsSliderSelected = slider;
 // }
 
-const SLIDERS = document.querySelectorAll('button[class*="-slider"]');
-
-loadFirstImageonReload();
-
 // const TOPIMAGE = document.getElementById("news1");
 
 // let topPos = TOPIMAGE.offsetTop;
 
 // document.querySelector('.news-slider-images').scrollTop = topPos;
+
+const SLIDERS = document.querySelectorAll('button[class*="-slider"]');
+
+loadFirstImageonReload();
 
 
 
@@ -64,16 +64,46 @@ const PCBUTTON = document.querySelector('.publications-close');
 
 hover(PBUTTON)
 
-PCBUTTON.addEventListener('click', ()=> removeOverlay('.dean-publication'))
-PBUTTON.addEventListener('click', ()=> createOverlay('.dean-publication'));
+PCBUTTON.addEventListener('click', () => remove('.dean-publication'))
+PBUTTON.addEventListener('click', () => show('.dean-publication'));
 
 const READ_MORE = document.querySelector('.readMore');
 
-READ_MORE.addEventListener('click', ()=> {
-    location.href='n&a-extension.html';
+READ_MORE.addEventListener('click', () => {
+    location.href = 'n&a-extension.html';
 })
 
 hover(READ_MORE)
+
+function show(section) {
+    // const SECTION = document.querySelector(`${section}-section`);
+
+    const POPUP_CONTAINER = document.querySelector(`${section}-wrapper`);
+
+    POPUP_CONTAINER.classList.toggle('active');
+
+    // const OVERLAY = document.createElement('div');
+    // OVERLAY.classList.toggle('active');
+
+    // OVERLAY.id = 'overlay';
+
+    // SECTION.append(OVERLAY);
+}
+
+function remove(section) {
+
+    // const OVERLAY = document.getElementById('overlay');
+
+    // OVERLAY.classList.toggle('active');
+
+    // const ALERT_SECTION = document.querySelector(`${section}-section`);
+
+    // ALERT_SECTION.removeChild(OVERLAY);
+
+    const POPUP_CONTAINER = document.querySelector(`${section}-wrapper`);
+
+    POPUP_CONTAINER.classList.toggle('active');
+}
 
 function moveSlider(slider, lastSelectedSlider) {
 
@@ -104,11 +134,11 @@ function loadFirstImageonReload() {
 
 function hover(button) {
 
-    button.addEventListener('mouseenter', ()=> {
+    button.addEventListener('mouseenter', () => {
         button.classList.toggle('active');
     })
 
-    button.addEventListener('mouseout', ()=> {
+    button.addEventListener('mouseout', () => {
         button.classList.toggle('active');
     })
 

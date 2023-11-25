@@ -5,6 +5,7 @@
   --fc-title: #362d2d;
   --fc-header: #FFF7D4;
   --bg-nav: #4C3D3D;
+  --bg-nav-curr: #FFD95A;
 }
 
 *,
@@ -78,6 +79,16 @@ main::before {
   color: var(--fc-header);
 }
 
+.wrapper nav ul li.current {  
+  background-color: var(--bg-nav-curr);
+  border: none;
+}
+
+.wrapper nav ul li.current a {
+  font-weight: bold;
+  color: var(--bg-nav);
+}
+
 section {
   display: grid;
   place-items: center;
@@ -110,6 +121,7 @@ section .header h1 {
   border-top: 0;
   width: 90%;
   background-color: #FFF7D4;
+  text-transform: uppercase;
 }
 
 .hero-article .left,
@@ -132,6 +144,7 @@ section .header h1 {
   border-radius: 20px;
   overflow: hidden;
   max-width: 90%;
+  box-shadow: 20px 20px 1px #4C3D3D;
 }
 
 .hero-article img,
@@ -217,5 +230,6 @@ section .header h1 {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center 15%;
 }
 

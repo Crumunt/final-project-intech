@@ -1,0 +1,103 @@
+@import url(header-footer.css);
+
+:root {
+  --bg-head: #4C3D3D;
+  --bg-form: #FFF7DA;
+  --fc-head: #FFF7DA;
+  --fs-large: 2rem;  
+  --fs-medium: 1.25rem;
+  --fs-small: 1rem;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(45deg,#FFD95A, #C07F00);
+  padding-bottom: 2rem;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--bg-head);
+  padding: 3rem;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: var(--fs-large);
+  color: var(--fc-head);
+}
+
+.form-wrapper {
+  width: 90%;
+  background-color: var(--bg-form);
+  padding: 5rem;
+  border-radius: 0 0 25px 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  width: 80%;
+  font-size: var(--fs-medium);
+  padding: 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  font-size: var(--fs-small);
+  width: 80%;
+}
+
+.submit {
+  padding: 1.5rem;
+  border-radius: 25px;
+  border: 1px solid black;
+  font-size: var(--fs-medium);
+  background-color: var(--bg-head);
+  color: var(--fc-head);
+  transition: all 200ms linear;
+}
+
+.submit:hover {
+  border-color: #FFD95A;
+  background-color: #FFD95A;
+  color: black;
+}
+
+.contacts-wrapper {
+  padding-bottom: 2rem;
+}
+
+.contacts-wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.contacts-wrapper ul li {
+  width: 30%;
+  border-bottom: 2px solid #4C3D3D;
+}
+
+.contacts-wrapper ul p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+  min-height: 103px;
+  color: #4C3D3D;
+}
+
+.contacts-wrapper ul p > img {
+  width: 10%;
+  vertical-align: middle;
+}

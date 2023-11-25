@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,16 +62,17 @@ header nav > a.current {
 
 footer {
   border-top: 1px solid black;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 10px;
   background-color: #ddddcd;
 }
 
 footer .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
+  padding: 2rem;
 }
 
 footer .main-content .generalInfoRow {
@@ -123,7 +126,7 @@ footer .main-content .generalInfoRow .contacts-container>ul>li>p>img {
   vertical-align: middle;
 }
 
-footer .main-content .formRow {
+/* footer .main-content .formRow {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,9 +187,9 @@ footer .main-content>.formRow .func-not-avail-section .func-not-avail-wrapper {
   max-width: 80%;
   max-height: 80%;
   box-shadow: 0 2px 4px 8px rgba(255, 255, 255, 0.15);
-}
+} */
 
-footer .main-content > .formRow .func-not-avail-section .func-not-avail-wrapper.active,
+/* footer .main-content > .formRow .func-not-avail-section .func-not-avail-wrapper.active,
 section.dean .dean-publication-section .dean-publication-wrapper.active {
     visibility: visible;
 }
@@ -252,7 +255,7 @@ footer .main-content > .formRow .func-not-avail-section #overlay.active,
 section.dean .dean-publication-section #overlay.active {
     opacity: 1;
     pointer-events: all;
-}
+} */
 
 footer .main-content .locationRow {
     display: flex;
@@ -280,25 +283,35 @@ footer .main-content .locationRow .location-container iframe {
     width: 100%;
 }
 
-footer .social-copyright {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+footer .copyright {
+    display: grid;
+    place-items: center;
     margin: 0 80px;
 }
 
-footer .social-copyright .socialLinks>nav {
+footer .socialLinks {
+  padding-top: 3rem;
+}
+
+footer .socialLinks>nav {
     display: flex;
     gap: 20px;
 }
 
-footer .social-copyright .socialLinks>nav>a {
-    width: 40px;
-    height: 40px;
+footer .socialLinks>nav>a {
+    width: 4rem;
+    /* height: 3rem; */
+    max-height: 4rem;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(#1f1f08, #4C3D3D);
 }
 
-footer .social-copyright .socialLinks>nav>a>img {
+footer .socialLinks a:hover > img {
+  opacity: 0.8;
+}
+
+footer .socialLinks>nav>a>img {
     width: 100%;
 }
