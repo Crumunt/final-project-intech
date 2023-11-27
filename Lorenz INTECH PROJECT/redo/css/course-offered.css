@@ -146,7 +146,7 @@ header nav > a.current-page {
     flex-direction: column;
     align-items: center;
     height: 400px;
-    padding: 20px;
+    padding: 1rem;
 }
 
 .bachelor-courses-container .course-container .right .course-desc .course-title,

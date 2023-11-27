@@ -15,12 +15,12 @@
     display: grid;
     place-items: center;
     isolation: isolate;
-    max-height: 80vh;
+    /* max-height: 80vh; */
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
                 url("../images/clg-ced.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    /* padding: 13rem; */
+    padding: 13rem;
 }
 
 .hero-section > * {
@@ -46,7 +46,7 @@
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    /* text-align: center; */
+    text-align: center;
     font-family: "Poppins";
 }
 
