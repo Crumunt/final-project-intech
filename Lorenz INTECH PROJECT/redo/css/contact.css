@@ -43,12 +43,16 @@ form {
 }
 
 input {
+  border-radius: 5px;
+  border: 1px solid;
   width: 80%;
   font-size: var(--fs-medium);
   padding: 1rem;
 }
 
 textarea {
+  border-radius: 5px;
+  border: 1px solid;
   padding: 1rem;
   font-size: var(--fs-small);
   width: 80%;

@@ -219,6 +219,7 @@ section .header h1 {
   border-radius: 20px;
   overflow: hidden;
   max-height: 200px;
+  padding: 1rem 0;
 }
 
 .sub-articles .top .article img,

@@ -8,13 +8,22 @@ class Header extends HTMLElement {
         <img src="../images/clsu-logo.jpg" alt="" />
       </div>
     </a>
+
+    <a href="#" class="hamburger-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
     <nav>
-      <a href="courses-offered.html" class="courses">Courses Offered</a>
-      <a href="faculty.html" class="faculty">Faculty</a>
-      <a href="facilities.html" class="facilities">Facilities</a>
-      <a href="services.html" class="services">Services</a>
-      <a href="n&a-extension.html" class="extensions">News and Announcements</a>
-      <a href="contact.html" class="contact">Contact us</a>
+      <ul>
+        <li><a href="courses-offered.html" class="courses">Courses Offered</a></li>
+        <li><a href="faculty.html" class="faculty">Faculty</a></li>
+        <li><a href="facilities.html" class="facilities">Facilities</a></li>
+        <li><a href="services.html" class="services">Services</a></li>
+        <li><a href="n&a-extension.html" class="extensions">News and Announcements</a></li>
+        <li><a href="contact.html" class="contact">Contact us</a></li>
+      </ul>
     </nav>
   </header>
     `
@@ -105,12 +114,21 @@ console.log(CURRENT_PAGE);
 console.log(BODY.classList);
 
 CURRENT_PAGE.forEach(page => {
-  if(page.classList.value == BODY.classList.value) {
+  if (page.classList.value == BODY.classList.value) {
     page.classList.add('current');
+    page.parentNode.classList.add('current');
   }
 
-  if(page.classList.contains(BODY.classList)) {
+  if (page.classList.contains(BODY.classList)) {
     // page.classList.add('current');
     page.parentElement.classList.add('current');
   }
+})
+
+const HAMBURGER_MENU = document.querySelector('.hamburger-menu');
+
+HAMBURGER_MENU.addEventListener('click', ()=> {
+
+  HAMBURGER_MENU.classList.toggle('active');
+
 })

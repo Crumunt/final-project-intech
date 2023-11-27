@@ -1,59 +1,348 @@
-@media screen and (max-width: 360px) {
- header > .image-container {
-    width: 40px;
-    height: 40px;
- }
- 
- header > nav {
-    gap: 10px;
- }
+@media (max-width: 599px) {
 
- header > nav > a {
-    padding: 5px 10px;
-    font-size: 5px;
- }
 
- main > .hero-section {
-    max-height: 230px;
- }
+  /* landing page */
+  .hero-section {
+    max-height: 100vh;
+  }
 
- main > .hero-section > .hero-text-container {
+  .hero-text-container {
+    width: 100%;
+    padding: 8rem;
+  }
+
+  .hero-text,
+  .hero-author {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-family: "Poppins";
+  }
+
+  .college-title h1 {
+    font-size: 3rem;
+    color: rgb(68, 41, 1);
+  }
+
+  .about-college>p {
+    font-size: 1.5rem;
+    text-align: left;
+
+  }
+
+  section.dean {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  section.dean .left,
+  section.dean .right {
+    width: 100%;
+  }
+
+  section.dean .right>p {
+    text-wrap: balance;
+  }
+
+  section.dean .dean-publication-section .dean-publication-wrapper {
     top: 25%;
- }
+    left: 50%;
+    transform: translate(-50%, -55%);
+    max-height: 40%;
+    width: 100%;
+  }
 
- main > .hero-section > .hero-text-container > .hero-text,
- main > .hero-section > .hero-text-container > .hero-author {
-    font-size: 12px;
- }
+  section.dean .dean-publication-section .publications-body {
+    max-width: 100%;
+  }
 
- main > .hero-section > .hero-text-container > .hero-author {
-    font-size: 8px;
- }
+  section.dean .dean-publication-section .publications-body a {
+    font-size: 1rem;
+  }
 
- main > .about-college-section {
-    padding: 20px;
- }
- 
- main > .about-college-section > .college-title {
-    font-size: 13px;
- }
+  section.news-announcements {
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 50px;
+  }
 
- main > .about-college-section > .about-college {
-    margin-top: -20px;
-    font-size: 10px;
-    max-width: 280px;
-    line-height: normal;
- }
+  section.news-announcements .left>.news-container,
+  section.news-announcements .right>.announcements-container {
+    max-height: 30vh;
+  }
 
- main > .dean-section {
+  section.news-announcements .button-wrapper {
+    top: 82%;
+  }
+
+
+  /* courses offered */
+
+  .bachelor-header p,
+  .graduate-header p {
+    font-size: 1.8rem;
+  }
+
+  .bachelor-courses-container .course-container,
+  .graduate-courses-container .course-section .course-container {
+    height: min-content;
+  }
+
+  .department-head-container {
+    display: none;
+  }
+
+  .bachelor-courses-container .course-container .right {
+    max-width: 100%;
+  }
+
+  .bachelor-courses-container .course-container .right .course-desc .course-title,
+  .graduate-courses-container .course-section .course-container .course-title {
+    font-size: 1.5rem;
+  }
+
+  .bachelor-courses-container .course-container .right .course-desc .course-overview,
+  .graduate-courses-container .course-section .course-container .course-overview {
+    font-size: clamp(.3rem, 1vw + .5rem, 1rem);
+  }
+
+  .graduate-courses-container .course-section {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .graduate-courses-container .course-section .course-container {
+    width: 80%;
+  }
+
+  /* faculty */
+
+  .dean-head-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .dean-head-section .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dean-head-section .right .head-section {
+    place-items: center;
+  }
+
+  .dean-head-section .dean-container {
+    width: 70%;
+    max-height: 60%;
+
+  }
+
+  .dean-head-section .head-container {
+    width: 90%;
+  }
+
+  .faculty-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .faculty-container {
+    width: 90%;
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+
+  .overlay .content p {
+    font-size: 1.25rem;
+  }
+
+  .overlay .content p span {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+  }
+
+  .dean-container,
+  .head-container,
+  .faculty-container {
+    box-shadow: 0 2px 4px 8px #0000002f;
+  }
+
+  /* facilities */
+
+  body.facilities main {
+    gap: 40px;
+  }
+
+  section.container {
+    height: min-content;
+  }
+
+  section.container .image-wrapper {
+    display: none;
+  }
+
+  section.container .content-wrapper {
+    width: 100%;
+    text-align: left;
+  }
+
+  section.container .content-wrapper .header {
+    font-size: 1.5rem;
+  }
+
+  section.container .content-wrapper p {
+    font-size: 1rem;
+  }
+
+  /* services */
+
+  body.services main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body.services .service {
+    display: flex;
     flex-direction: column;
     gap: 20px;
- }
-}
+    width: 90%;
+    min-height: 30vh;
+    max-height: 30vh;
+  }
 
-@media screen and (max-width: 1366px) {
-   main .hero-section>.hero-text-container {
-      top: 75%;
-      left: 51%;
-   }
+  .service .top {
+    padding: 1rem;
+    width: 100%;
+  }
+
+
+  .top img {
+    padding: .5rem;
+  }
+
+  .service .bottom {
+    padding: .5rem;
+    /* padding: 0; */
+    /* padding-top: .5rem; */
+  }
+
+  .service p.header {
+    font-size: .9rem;
+    margin-bottom: 10px;
+  }
+
+  .service p.body {
+    font-size: .8rem;
+    padding: .5rem;
+  }
+
+  /* news-announcements latest */
+
+  body.extensions main {
+    padding: 5rem;
+  }
+
+  body.extensions main>h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  body.extensions section .header {
+    padding: 1.5rem;
+  }
+
+  body.extensions .hero-article,
+  body.extensions .hero-announcement {
+    flex-direction: column;
+  }
+
+  .hero-article .left,
+  .hero-article .right,
+  .hero-announcement .left,
+  .hero-announcement .right {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .hero-article .left h1,
+  .hero-announcement .right h1 {
+    font-size: 2rem;
+  }
+
+  .sub-articles .top .article,
+  .sub-articles .bottom .article,
+  .sub-announcements .top .announcement,
+  .sub-announcements .bottom .announcement {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    width: 100%;
+  }
+
+  .sub-articles .top .article>div,
+  .sub-articles .bottom .article>div,
+  .sub-announcements .top .announcement>div,
+  .sub-announcements .bottom .announcement>div {
+    width: 100%;
+  }
+
+  .sub-articles .top .article .title h1,
+  .sub-articles .bottom .article .title h1,
+  .sub-announcements .top .announcement .title h1,
+  .sub-announcements .bottom .announcement .title h1 {
+    padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  body.extensions .archived-news-wrapper {
+    flex-direction: column;
+  }
+  
+  body.extensions section .archived-news-wrapper .news-wrapper,
+  body.extensions section .year-sort-wrapper {
+    width: 100%;
+  }
+
+  body.extensions section .year-sort-wrapper nav ul {
+    /* flex-direction: row; */
+    /* gap: 5px; */
+    display: none;
+  }
+
+  body.extensions section .year-sort-wrapper nav ul li {
+    font-size: 1rem;
+  }
+
+  /* contact us */
+
+  body.contact .header {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .contacts-wrapper {
+    display: none;
+  }
+
+  .form-wrapper {
+    padding: 5rem 1rem;
+  }
+
+  body.contact input {
+    font-size: 1rem;
+  }
+
+  body.contact .submit {
+    font-size: 1rem;
+  }
 }

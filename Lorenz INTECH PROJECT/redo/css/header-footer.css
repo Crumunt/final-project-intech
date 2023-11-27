@@ -18,7 +18,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  /* background-color: #ebe43d; */
   background-image: linear-gradient(to right, #FFD95A, #C07F00);
 }
 
@@ -35,29 +34,57 @@ header .image-container>img {
   width: 100%;
 }
 
-header nav {
+header nav ul {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
+  list-style: none;
 }
 
-header nav>a {
-  padding: 15px 25px;
+header nav li {
   border-radius: 30px;
-  text-decoration: none;
-  color: #FFF7D4;
   background-color: #44431b;
   transition: color 0.15s;
+  cursor: pointer;
+  padding: 0;
 }
 
-header nav>a:hover {
+header nav a {
+  display: block;
+  text-decoration: none;
+  color: #FFF7D4;
+  padding: 15px 25px;
+}
+
+header nav li:hover a {
   color: rgb(175, 175, 175);
 }
 
-header nav > a.current {
+header nav li.current  {
+  background-color: #FFD95A;
+}
+
+header nav li.current a {
   font-weight: bold;
   color: #4C3D3D;
-  background-color: #FFD95A;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 2.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.hamburger-menu .bar {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 footer {
@@ -314,4 +341,66 @@ footer .socialLinks a:hover > img {
 
 footer .socialLinks>nav>a>img {
     width: 100%;
+}
+
+/* for phones */
+@media (max-width: 599px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+    align-items: center;
+  }
+
+  header nav ul {
+    padding-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav li {
+    min-width: 12rem;
+    max-width: 12rem;
+    align-items: center;
+  }
+
+  header nav a {
+    text-align: center;
+  }
+
+  .hamburger-menu.active + nav {
+    display: flex;
+    animation: slide-down 500ms forwards;
+  }
+
+  @keyframes slide-down {
+    0% {
+      translate: 0 -100%;
+    }
+    100% {
+      translate: 0 0%;
+    }
+  }
+
+  footer .main-content {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .socialLinks {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
 }

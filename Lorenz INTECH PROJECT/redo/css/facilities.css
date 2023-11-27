@@ -20,7 +20,7 @@ section:last-child {
 
 section {
   display: inherit;
-  flex-direction: row;
+  /* flex-direction: row; */
   width: 90%;
   height: 80vh;
   border: 2px solid black;
