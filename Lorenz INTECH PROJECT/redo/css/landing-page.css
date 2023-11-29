@@ -15,25 +15,16 @@
     display: grid;
     place-items: center;
     isolation: isolate;
-    /* max-height: 80vh; */
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
-                url("../images/clg-ced.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        url("../images/clg-ced.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 13rem;
 }
 
-.hero-section > * {
+/* .hero-section>* {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-}
-
-/* .hero-background img {
-    display: block;
-    width: 100%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    z-index: -10;
 } */
 
 .hero-text-container {
@@ -42,7 +33,6 @@
 
 .hero-text,
 .hero-author {
-    font-size: 3rem;
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -50,8 +40,12 @@
     font-family: "Poppins";
 }
 
+.hero-text {
+    font-size: clamp(.8rem, 1.5vw + 1rem, 5rem);
+}
+
 .hero-author {
-    font-size: 20px;
+    font-size: clamp(.5rem, 1.25vw + .5rem, 1.5rem);
 }
 
 section.college-desc {
@@ -65,19 +59,19 @@ section.college-desc {
     padding-bottom: 80px;
 }
 
-section.college-desc > .college-title {
-    font-size: 40px;
+section.college-desc>.college-title {
+    font-size: clamp(1rem, 1.5vw + .8rem, 4rem);
     color: rgb(68, 41, 1);
 }
 
-section.college-desc > .about-college {
+section.college-desc>.about-college {
     width: 70%;
-    font-size: 2rem;
+    font-size: clamp(.5rem, 1.5vw + .5rem, 2rem);
     text-align: justify;
-    line-height: 50px;
+    line-height: min(2.5rem, 5rem);
 }
 
-section.college-desc > p {
+section.college-desc>p {
     font-weight: 500;
     font-family: "Montserrat";
     color: rgb(68, 41, 1);
@@ -93,9 +87,8 @@ section.dean {
     background-color: #ddddcd;
 }
 
-section.dean > .left,
+section.dean>.left,
 section.dean>.right {
-    /* margin-left: 7%; */
     width: 50%;
 }
 
@@ -107,8 +100,8 @@ section.dean .left {
     align-items: center;
 }
 
-section.dean > .left .dean-name-container>p {
-    font-size: 22px;
+section.dean>.left .dean-name-container>p {
+    font-size: clamp(.8rem, 2vw + .5rem, 3rem);
     font-weight: 500;
     text-shadow: 0 3px 4px #979797;
     color: rgb(68, 41, 1);
@@ -116,7 +109,7 @@ section.dean > .left .dean-name-container>p {
     border-bottom: solid;
 }
 
-section.dean > .left .dean-image-container {
+section.dean>.left .dean-image-container {
     width: 70%;
     border: 3px solid black;
     border-radius: 25px;
@@ -124,16 +117,16 @@ section.dean > .left .dean-image-container {
     overflow: hidden;
 }
 
-section.dean > .left .dean-image-container > img {
+section.dean>.left .dean-image-container>img {
     font-style: italic;
     vertical-align: middle;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-section.dean > .right {
+section.dean>.right {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -143,21 +136,20 @@ section.dean > .right {
     position: relative;
 }
 
-section.dean > .right > p {
-    /* width: 500px; */
+section.dean>.right>p {
     width: 70%;
-    font-size: 25px;
+    font-size: clamp(.5rem, 1vw + 1rem, 3rem);
     line-height: 3rem;
     text-align: left;
 }
 
-section.dean > .right>p>span {
+section.dean>.right>p>span {
     font-style: oblique;
     font-weight: 500;
-    font-size: 30px;
+    font-size: clamp(.7rem, 1vw + 1rem, 3rem);
 }
 
-section.dean > .right > button {
+section.dean>.right>button {
     font-size: 18px;
     padding: 8px 15px;
     border-radius: 8px;
@@ -167,7 +159,7 @@ section.dean > .right > button {
     transition: color 0.15s;
 }
 
-section.dean .dean-publication-section .dean-publication-wrapper {
+section.dean .dean-publication-wrapper {
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -181,26 +173,26 @@ section.dean .dean-publication-section .dean-publication-wrapper {
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: #ebe43d;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 60%;
+    max-height: 60%;
     box-shadow: 0 2px 4px 8px rgba(255, 255, 255, 0.15),
-                0 0 0 100vw rgb(0 0 0 / .8);
+        0 0 0 100vw rgb(0 0 0 / .8);
 }
 
-section.dean .dean-publication-section .publications-body {
+section.dean .publications-body {
     padding-top: 15px;
     overflow: scroll;
 }
 
-section.dean .dean-publication-section .publications-body ul {
+section.dean .publications-body ul {
     list-style-type: none;
 }
 
-section.dean .dean-publication-section .publications-body ul li {
+section.dean .publications-body ul li {
     margin-top: 10px;
 }
 
-section.dean .dean-publication-section .publications-body a {
+section.dean .publications-body a {
     text-decoration: none;
     text-align: left;
     color: #1f1f08;
@@ -209,16 +201,16 @@ section.dean .dean-publication-section .publications-body a {
     font-size: 1.25rem;
 }
 
-section.dean .dean-publication-section .publications-body a:hover {
+section.dean .publications-body a:hover {
     border-bottom: solid;
     font-weight: 500;
 }
 
-section.dean .dean-publication-section .dean-publication-wrapper.active {
+section.dean .dean-publication-wrapper.active {
     visibility: visible;
 }
 
-section.dean .dean-publication-section .publications-header {
+section.dean .publications-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,12 +218,12 @@ section.dean .dean-publication-section .publications-header {
     border-bottom: 1px solid;
 }
 
-section.dean .dean-publication-section .publications-header p {
+section.dean .publications-header p {
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-section.dean .dean-publication-section .publications-header .publications-close {
+section.dean .publications-header .publications-close {
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -246,29 +238,9 @@ section.dean .dean-publication-section .publications-header .publications-close:
     background-color: rgb(184, 184, 184);
 }
 
-section.dean .dean-publication-section .publications-header .publications-close {
+section.dean .publications-header .publications-close {
     font-size: 1.5rem;
 }
-
-/* section.dean .dean-publication-section #overlay {
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 4;
-}
-
-section.dean .dean-publication-section #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-} */
-
-/* section.dean > .right > button:hover {
-    color: rgb(175, 175, 175);
-} */
 
 section.news-announcements {
     position: relative;
@@ -280,8 +252,8 @@ section.news-announcements {
     background-image: linear-gradient(to bottom, #ddddcd, #f5ee56);
 }
 
-section.news-announcements > .left,
-section.news-announcements > .right {
+section.news-announcements>.left,
+section.news-announcements>.right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,24 +261,13 @@ section.news-announcements > .right {
     gap: 20px;
 }
 
-section.news-announcements > .left,
-section.news-announcements > .right {
+section.news-announcements>.left,
+section.news-announcements>.right {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: clamp(.7rem, 1vw + .7rem, 3rem);
     color: #44431b;
     width: 100%;
 }
-
-/* section.news-announcements > .left > button,
-section.news-announcements > .right > button {
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 1px solid;
-    color: white;
-    border: 1px solid black;
-    background-color: #44431b;
-} */
 
 section.news-announcements .button-wrapper {
     position: absolute;
@@ -315,7 +276,6 @@ section.news-announcements .button-wrapper {
 
 section.news-announcements button.readMore {
     font-size: 20px;
-    /* padding: 10px 20px; */
     padding: 1rem;
     border-radius: 20px;
     border: 1px solid;
@@ -325,44 +285,40 @@ section.news-announcements button.readMore {
 }
 
 section.news-announcements button.readMore.active,
-section.dean > .right > .publications-button.active {
+section.dean>.right>.publications-button.active {
     transition: all 200ms ease;
     transform: translateY(-2%);
     background-color: #f5ee56;
     color: #000000;
 }
 
-section.news-announcements .left > button:hover,
-section.news-announcements .right > button:hover {
+section.news-announcements .left>button:hover,
+section.news-announcements .right>button:hover {
     color: #979797;
 }
 
-section.news-announcements .left > .news-container,
-section.news-announcements .right > .announcements-container {
+section.news-announcements .news-container,
+section.news-announcements .announcements-container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 550px; */
     width: 80%;
-    /* max-height: fit-content; */
-    max-height: 80vh;
-    /* height: 20%; */
-    /* height: 450px; */
+    max-height: 65vh;
     border: 3px solid black;
     border-radius: 20px;
     background-color: white;
     overflow: hidden;
 }
 
-section.news-announcements .left > .news-container:hover,
-section.news-announcements .right > .announcements-container:hover {
+section.news-announcements .left>.news-container:hover,
+section.news-announcements .right>.announcements-container:hover {
     box-shadow: 0 2px 30px rgba(116, 85, 7, 0.485);
 }
 
-section.news-announcements .left > .news-container .news-slider-images,
-section.news-announcements .right > .announcements-container .announcement-slider-images {
+section.news-announcements .left>.news-container .news-slider-images,
+section.news-announcements .right>.announcements-container .announcement-slider-images {
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -370,8 +326,9 @@ section.news-announcements .right > .announcements-container .announcement-slide
     scroll-behavior: smooth;
 }
 
-section.news-announcements .left > .news-container .news-slider-images img,
-section.news-announcements .right > .announcements-container .announcement-slider-images img {
+section.news-announcements .left>.news-container .news-slider-images img,
+section.news-announcements .right>.announcements-container .announcement-slider-images img {
+    display: block;
     flex: 1 0 100%;
     object-fit: fill;
     scroll-snap-align: start;
@@ -379,8 +336,8 @@ section.news-announcements .right > .announcements-container .announcement-slide
     height: 100%;
 }
 
-section.news-announcements > .left .news-container > .news-slider-container > ul,
-section.news-announcements > .right .announcements-container > .announcements-slider-container > ul {
+section.news-announcements>.left .news-container>.news-slider-container>ul,
+section.news-announcements>.right .announcements-container>.announcements-slider-container>ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -391,8 +348,8 @@ section.news-announcements > .right .announcements-container > .announcements-sl
     list-style: none;
 }
 
-section.news-announcements > .left .news-container .news-slider-container > ul > li > button,
-section.news-announcements > .right .announcements-container .announcements-slider-container > ul > li > button {
+section.news-announcements>.left .news-container .news-slider-container>ul>li>button,
+section.news-announcements>.right .announcements-container .announcements-slider-container>ul>li>button {
     padding: 10px;
     border-radius: 50%;
     border: 0.5px solid black;
@@ -400,14 +357,117 @@ section.news-announcements > .right .announcements-container .announcements-slid
     width: 10px;
 }
 
-section.news-announcements > .left .news-container .news-slider-container > ul > li >button[current="false"],
-section.news-announcements > .right .announcements-container .announcements-slider-container > ul > li > button[current="false"] {
+section.news-announcements>.left .news-container .news-slider-container>ul>li>button[current="false"],
+section.news-announcements>.right .announcements-container .announcements-slider-container>ul>li>button[current="false"] {
     opacity: 0.75;
 }
 
-section.news-announcements > .left > .news-container > .news-slider-container > ul > li > button[current="true"],
-section.news-announcements > .right > .announcements-container > .announcements-slider-container > ul > li > button[current="true"] {
+section.news-announcements>.left>.news-container>.news-slider-container>ul>li>button[current="true"],
+section.news-announcements>.right>.announcements-container>.announcements-slider-container>ul>li>button[current="true"] {
     transform: scale(1.4);
     background-color: #44431b;
     border: none;
+}
+
+@media (max-width: 1350px) {}
+
+@media (max-width: 1288px) {
+
+    body.landing-page .news-container,
+    body.landing-page .announcements-container {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    section.dean {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.dean .right {
+        width: 100%;
+        gap: 50px;
+    }
+
+    section.dean .right>p {
+        line-height: 2.8rem;
+    }
+
+    footer .main-content {
+        width: 100%;
+    }
+
+    footer .main-content .generalInfoRow {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    main .hero-section {
+        max-height: 10vh;
+    }
+
+    main .hero-text-container {
+        position: absolute;
+    }
+
+    section.news-announcements {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    section.news-announcements .news-container,
+    section.news-announcements .announcements-container {
+        max-height: 60vh;
+
+    }
+
+    section.news-announcements .button-wrapper {
+        top: 85%;
+    }
+
+    footer .main-content {
+        width: 100%;
+    }
+
+    footer .main-content .generalInfoRow {
+        width: 90%;
+    }
+}
+
+@media (width <= 640px) {
+    section.dean .publications-body a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 475px) {
+
+    section.college-desc>.about-college {
+        line-height: 2rem;
+        font-size: 1.25rem;
+    }
+
+    section.dean .left {
+        width: 90%;
+    }
+
+    section.news-announcements .news-container,
+    section.news-announcements .announcements-container {
+        max-height: 40vh;
+    }
+
+    section.news-announcements .button-wrapper {
+        top: 81%;
+    }
+
+    footer .main-content {
+        width: 100%;
+    }
+
+    footer .main-content .generalInfoRow {
+        width: 90%;
+    }
 }

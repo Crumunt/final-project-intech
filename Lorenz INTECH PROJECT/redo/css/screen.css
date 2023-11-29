@@ -27,7 +27,7 @@
 
   .hero-text,
   .hero-author {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -36,11 +36,11 @@
   }
 
   .hero-author {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   .college-title h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     color: rgb(68, 41, 1);
   }
 
@@ -51,7 +51,7 @@
   .about-college>p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: justify;
     width: 90%;
 
@@ -85,7 +85,7 @@
   }
 
   section.dean .dean-publication-section .publications-body a {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   section.news-announcements {
@@ -96,11 +96,13 @@
 
   section.news-announcements .left>.news-container,
   section.news-announcements .right>.announcements-container {
-    max-height: 30vh;
+    /* max-height: 50vh; */
+    max-height: min(20vh, 80vh);
+
   }
 
   section.news-announcements .button-wrapper {
-    top: 82%;
+    top: clamp(70%, 1vh + 2% , 82%);
   }
 
 
@@ -108,7 +110,7 @@
 
   .bachelor-header p,
   .graduate-header p {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .bachelor-courses-container .course-container,
@@ -126,7 +128,7 @@
 
   .bachelor-courses-container .course-container .right .course-desc .course-title,
   .graduate-courses-container .course-section .course-container .course-title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .bachelor-courses-container .course-container .right .course-desc .course-overview,
@@ -186,11 +188,11 @@
   }
 
   .overlay .content p {
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
   }
 
   .overlay .content p span {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding-bottom: .5rem;
   }
 
@@ -208,11 +210,11 @@
   }
 
   section.container .content-wrapper .header {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   section.container .content-wrapper p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   /* services */
@@ -247,12 +249,12 @@
   }
 
   .service p.header {
-    font-size: .9rem;
+    /* font-size: .9rem; */
     margin-bottom: 10px;
   }
 
   .service p.body {
-    font-size: .8rem;
+    /* font-size: .8rem; */
     padding: .5rem;
   }
 
@@ -263,7 +265,7 @@
   }
 
   body.extensions main>h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     text-align: center;
   }
 
@@ -286,7 +288,7 @@
 
   .hero-article .left h1,
   .hero-announcement .right h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .sub-articles .top .article,
@@ -330,7 +332,7 @@
   }
 
   body.extensions section .year-sort-wrapper nav ul li {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   /* contact us */
@@ -349,11 +351,11 @@
   }
 
   body.contact input {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   body.contact .submit {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 }
 
@@ -419,7 +421,7 @@
 
   .hero-text,
   .hero-author {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -428,11 +430,11 @@
   }
 
   .hero-author {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .college-title h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   body.landing-page .about-college {
@@ -442,7 +444,7 @@
   .about-college>p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: justify;
     width: 90%;
 
@@ -484,7 +486,7 @@
   }
 
   section.dean .dean-publication-section .publications-body a {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   section.news-announcements {
@@ -499,14 +501,14 @@
   }
 
   section.news-announcements .button-wrapper {
-    top: 85%;
+    /* top: 85%; */
   }
 
   /* courses offered */
 
   .bachelor-header p,
   .graduate-header p {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .department-head-container {
@@ -519,7 +521,7 @@
 
   .bachelor-courses-container .course-container .right .course-desc .course-title,
   .graduate-courses-container .course-section .course-container .course-title {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
   }
 
   .bachelor-courses-container .course-container .right .course-desc .course-overview {
@@ -583,15 +585,15 @@
   }
 
   .dean-container .overlay .content p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .overlay .content p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .overlay .content p span {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding-bottom: .5rem;
   }
 
@@ -618,7 +620,7 @@
   }
 
   section.container .content-wrapper .header {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   section.container .content-wrapper p {
@@ -656,12 +658,12 @@
   }
 
   .service p.header {
-    font-size: .9rem;
+    /* font-size: .9rem; */
     margin-bottom: 10px;
   }
 
   .service p.body {
-    font-size: .8rem;
+    /* font-size: .8rem; */
     padding: .5rem;
   }
 
@@ -672,7 +674,7 @@
   }
 
   body.extensions main>h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     text-align: center;
   }
 
@@ -695,7 +697,7 @@
 
   .hero-article .left h1,
   .hero-announcement .right h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .sub-articles .top .article,
@@ -742,7 +744,7 @@
   }
 
   body.extensions section .year-sort-wrapper nav ul li {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   /* contact us */
@@ -761,11 +763,11 @@
   }
 
   body.contact input {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   body.contact .submit {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   footer .main-content {
@@ -790,7 +792,7 @@
   header nav a {
     padding: 1rem;
     text-align: center;
-    font-size: .9rem;
+    /* font-size: .9rem; */
   }
 
   body.landing-page .hero-section {
@@ -804,7 +806,7 @@
 
   .hero-text,
   .hero-author {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 700;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -813,21 +815,21 @@
   }
 
   .hero-author {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .college-title h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 
   body.landing-page .about-college {
-    width: 100%;
+    width: 85%;
   }
 
   .about-college>p {
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     text-align: justify;
     width: 90%;
 
@@ -868,7 +870,7 @@
   }
 
   section.dean .dean-publication-section .publications-body a {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   section.news-announcements {
@@ -883,14 +885,14 @@
   }
 
   section.news-announcements .button-wrapper {
-    top: 69%;
+    /* top: 69%; */
   }
 
   /* courses offered */
 
   .bachelor-header p,
   .graduate-header p {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .department-head-container {
@@ -913,7 +915,7 @@
 
   .bachelor-courses-container .course-container .right .course-desc .course-title,
   .graduate-courses-container .course-section .course-container .course-title {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
   }
 
   .bachelor-courses-container .course-container .right .course-desc {
@@ -921,7 +923,7 @@
   }
 
   .bachelor-courses-container .course-container .right .course-desc .course-overview {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
 
@@ -981,15 +983,15 @@
   }
 
   .dean-container .overlay .content p {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .overlay .content p {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   .overlay .content p span {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding-bottom: .5rem;
   }
 
@@ -1016,11 +1018,11 @@
   }
 
   section.container .content-wrapper .header {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   section.container .content-wrapper p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   /* services */
@@ -1053,12 +1055,12 @@
   }
 
   .service p.header {
-    font-size: .9rem;
+    /* font-size: .9rem; */
     margin-bottom: 10px;
   }
 
   .service p.body {
-    font-size: .8rem;
+    /* font-size: .8rem; */
     padding: .5rem;
   }
 
@@ -1069,7 +1071,7 @@
   }
 
   body.extensions main>h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     text-align: center;
   }
 
@@ -1092,7 +1094,7 @@
 
   .hero-article .left h1,
   .hero-announcement .right h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .sub-articles .top .article,
@@ -1139,7 +1141,7 @@
   }
 
   body.extensions section .year-sort-wrapper nav ul li {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   /* contact us */
@@ -1158,11 +1160,11 @@
   }
 
   body.contact input {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   body.contact .submit {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   footer .main-content {
@@ -1185,3 +1187,48 @@
     padding: 2rem;
   }
 }
+
+/* @media (width > 1200px) {
+
+  header nav a {
+    font-size: clamp(1.25rem, 1vw + .5rem, 5rem);
+    padding: 3rem;
+  }
+
+  section.college-desc .college-title {
+    font-size: 3rem;
+  }
+
+  section.college-desc .about-college p {
+    font-size: 2.5rem;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  section.dean > .right > button {
+    font-size: 1.5rem;
+  } 
+
+  section.news-announcements button.readMore {
+    font-size: 1.8rem;
+  }
+
+
+  
+
+  footer .main-content .generalInfoRow .header-container .college-name {
+    font-size: 3rem;
+  }
+
+  footer .main-content .generalInfoRow .header-container .college-gen-loc {
+    font-size: 1.5rem;
+  }
+
+  footer .main-content .generalInfoRow .contacts-container li > p {
+    font-size: 1.25rem;
+  }
+
+} */
+

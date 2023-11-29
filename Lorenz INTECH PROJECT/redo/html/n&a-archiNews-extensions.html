@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College of Education</title>
     <link rel="stylesheet" href="../css/archi-news.css" />
-    <link rel="stylesheet" href="../css/screen.css" />
+    <!-- <link rel="stylesheet" href="../css/screen.css" /> -->
 
     <script src="../javascript/components.js" defer></script>
     <script src="../javascript/n&a.js" defer></script>
@@ -20,14 +20,12 @@
     <div class="wrapper">
       <nav>
         <ul>
-          <li>
-            <a href="n&a-extension.html" class="latest">Latest News</a>
-          </li>
-          <li>
-            <a href="n&a-archiNews-extensions.html" class="news extensions"
-              >Archived News</a
-            >
-          </li>
+          <a href="n&a-extension.html">
+            <li class="latest">Latest News</li>
+          </a>
+          <a href="n&a-archiNews-extensions.html" class="news extensions">
+            <li>Archived News</li>
+          </a>
         </ul>
       </nav>
 
@@ -2554,15 +2552,15 @@
 
     const SELECT = document.querySelector("select");
 
-    if(window.innerWidth < 600) {
+    if(window.innerWidth < 1024) {
       SELECT.removeAttribute('hidden');
     }
 
     window.addEventListener('resize', ()=> {
-      if(window.innerWidth < 600) {
+      if(window.innerWidth < 1024) {
         SELECT.removeAttribute('hidden')
       }
-      if(window.innerWidth >= 600) {
+      if(window.innerWidth >= 1024) {
         SELECT.setAttribute('hidden', '')
       }
     })

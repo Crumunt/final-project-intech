@@ -105,3 +105,71 @@ textarea {
   width: 10%;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 1348px) {}
+
+@media screen and (max-width: 1288px) {}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    padding: 2rem;
+  }
+
+  .contacts-wrapper {
+    display: none;
+  }
+
+  .form-wrapper {
+    padding: 2rem;
+  }
+  
+  input,
+  textarea {
+    width: 80%;
+  }
+
+}
+
+@media screen and (width <=640px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .contacts-wrapper {
+    display: none;
+  }
+
+  .form-wrapper {
+    padding: 2rem;
+  }
+  
+  input,
+  textarea {
+    width: 90%;
+  }
+}
+
+@media screen and (width <=475px) {
+
+  .header {
+    padding: 2rem;
+  }
+
+  .contacts-wrapper {
+    display: none;
+  }
+
+  .form-wrapper {
+    padding: 2rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+  }
+}

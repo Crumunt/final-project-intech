@@ -9,7 +9,7 @@ class Header extends HTMLElement {
       </div>
     </a>
 
-    <a href="#" class="hamburger-menu">
+    <a href="#" class="hamburger-menu inactive">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
@@ -121,13 +121,15 @@ CURRENT_PAGE.forEach(page => {
 
   if (page.classList.contains(BODY.classList)) {
     // page.classList.add('current');
-    page.parentElement.classList.add('current');
+    page.classList.add('current');
   }
 })
 
 const HAMBURGER_MENU = document.querySelector('.hamburger-menu');
 
 HAMBURGER_MENU.addEventListener('click', ()=> {
+
+  HAMBURGER_MENU.classList.toggle('inactive');
 
   HAMBURGER_MENU.classList.toggle('active');
 

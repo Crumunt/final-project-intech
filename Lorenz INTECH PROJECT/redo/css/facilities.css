@@ -20,9 +20,7 @@ section:last-child {
 
 section {
   display: inherit;
-  /* flex-direction: row; */
   width: 90%;
-  height: 80vh;
   border: 2px solid black;
   border-radius: 40px;
   overflow: hidden;
@@ -46,7 +44,6 @@ img {
 
 .image-wrapper {
   width: 40%;
-  height: 100%;
   border-right: 3px solid #C07F00;
   border-radius: 0 50px 50px 0;
   box-shadow: 1px 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -73,7 +70,7 @@ p.header {
   width: 100%;
   text-align: right;
   text-transform: uppercase;
-  font-size: clamp(2rem, 2.5rem, 4rem);
+  font-size: clamp(1.5rem, 2rem, 4rem);
   padding-bottom: 15px;
   border-bottom: 4px solid #FFD95A;
   margin-bottom: 20px;
@@ -85,7 +82,7 @@ section.reverse p.header {
 }
 
 p.content {
-  font-size: 25px;
+  font-size: clamp(.2rem, 1vw + .5rem, 2rem);
   color: #FFF7D4;
 }
 
@@ -96,4 +93,46 @@ section img {
 section.active img {
   transition: transform 0.15s ease-in;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1348px) {}
+
+@media screen and (max-width: 1288px) {}
+
+@media screen and (max-width: 1024px) {
+ 
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (width <= 640px) {
+  .container .image-wrapper {
+    display: none;
+  }
+
+  .container .content-wrapper {
+    width: 100%;
+    text-align: left;
+  }
+
+  p.header {
+    text-align: left;
+  }
+}
+
+@media screen and (width <=475px) {
+  .container .image-wrapper {
+    display: none;
+  }
+
+  .container .content-wrapper {
+    width: 100%;
+    text-align: left;
+  }
+
+  p.header {
+    text-align: left;
+  }
 }

@@ -1,12 +1,12 @@
-const YEAR_BUTTON = document.querySelectorAll('[aria-current]')
+const YEAR_BUTTON = document.querySelectorAll('li[aria-current]')
 
 console.log(YEAR_BUTTON)
 
-YEAR_BUTTON.forEach(year => year.addEventListener('click', () => showPage(year)))
+YEAR_BUTTON.forEach(year => year.addEventListener('click', ()=> showPage(year)))
 
 const SELECT_YEAR = document.querySelector('select');
 
-SELECT_YEAR.addEventListener('change', () => showPage(SELECT_YEAR))
+SELECT_YEAR.addEventListener('change', ()=> showPage(SELECT_YEAR))
 
 function showPage(e) {
 

@@ -1,7 +1,7 @@
 @import url(header-footer.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
 
-header nav > a.current-page {
+header nav>a.current-page {
     font-weight: bold;
     color: #4C3D3D;
     background-color: #FFD95A;
@@ -18,15 +18,13 @@ header nav > a.current-page {
     border-left: 0;
     border-right: 0;
     width: 100%;
-    /* background-color: #DDDDCD; */
-    /* background-color: #FFD95A; */
     background-color: #4C3D3D;
     text-transform: uppercase;
 }
 
 .bachelor-header p,
 .graduate-header p {
-    font-size: 50px;
+    font-size: clamp(1rem, 2vw + 1rem, 7rem);
     color: #FFF7D4;
 }
 
@@ -54,8 +52,6 @@ header nav > a.current-page {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: linear-gradient(to bottom, #FFD95A, #C07F00); */
-    /* background-color: #C07F00; */
     background-color: #FFD95A;
 }
 
@@ -69,11 +65,10 @@ header nav > a.current-page {
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    height: 500px;
+    padding: 2rem;
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 80px;
-    /* background-color: #7b6c4a; */
 }
 
 .bachelor-courses-container .course-container .left,
@@ -145,7 +140,6 @@ header nav > a.current-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
     padding: 1rem;
 }
 
@@ -153,12 +147,9 @@ header nav > a.current-page {
 .graduate-courses-container .course-section .course-container .course-title {
     width: 90%;
     text-align: center;
-    font-size: 30px;
-    /* color: #ede88a; */
-    /* color: #4C3D3D; */
+    font-size: clamp(.4rem, 1vw + 1.15rem, 1.8rem);
     color: #FFF7D4;
     border-bottom: solid;
-    /* border-color: yellowgreen; */
     border-color: #FFD95A;
     text-shadow: 0 4px rgba(0, 0, 0, 0.15);
     user-select: none;
@@ -166,10 +157,8 @@ header nav > a.current-page {
 
 .bachelor-courses-container .course-container .right .course-desc .course-overview,
 .graduate-courses-container .course-section .course-container .course-overview {
-    font-size: 21px;
-    line-height: 35px;
-    /* color: #ede88a; */
-    /* color: #4C3D3D; */
+    font-size: clamp(.5rem, 3vw + 1rem, 1.2rem);
+    line-height: clamp(1rem, 1vw + 1.5rem, 5rem);
     color: #FFF7D4;
     user-select: none;
 }
@@ -181,17 +170,18 @@ header nav > a.current-page {
 .graduate-courses-container .course-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    place-items: center;
     row-gap: 50px;
     column-gap: 50px;
     margin-bottom: 50px;
 }
 
 .graduate-courses-container .course-section .course-container {
-    width: 600px;
-    height: 500px;
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
     border: 1px solid black;
     border-radius: 30px;
-    /* background-color: #7b6c4a; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,4 +195,78 @@ header nav > a.current-page {
 .graduate-courses-container .course-section .course-container .course-overview {
     margin-top: 20px;
     width: 90%;
+}
+
+@media screen and (max-width: 1348px) {}
+
+@media screen and (max-width: 1288px) {}
+
+@media screen and (max-width: 1024px) {
+
+    .course-desc .course-overview {
+        padding-left: 1rem;
+    }
+
+    .graduate-courses-container .course-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .department-head-container {
+        display: none;
+    }
+
+    .bachelor-courses-container .course-container .right {
+        max-width: 100%;
+    }
+
+    .bachelor-courses-container .course-container .right .course-desc {
+        padding: 0;
+    }
+
+    .graduate-courses-container .course-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (width <= 640px) {
+    .department-head-container {
+        display: none;
+    }
+
+    .bachelor-courses-container .course-container .right {
+        max-width: 100%;
+    }
+
+    .bachelor-courses-container .course-container .right .course-desc {
+        padding: 0;
+    }
+
+    .graduate-courses-container .course-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (width <=475px) {
+    .department-head-container {
+        display: none;
+    }
+
+    .bachelor-courses-container .course-container .right {
+        max-width: 100%;
+    }
+
+    .bachelor-courses-container .course-container .right .course-desc {
+        padding: 0;
+    }
+
+    .bachelor-courses-container .course-container .right .course-desc .course-overview,
+    .graduate-courses-container .course-section .course-container .course-overview {
+        font-size: 1rem;
+    }
+
+    .graduate-courses-container .course-section {
+        grid-template-columns: 1fr;
+    }
 }
